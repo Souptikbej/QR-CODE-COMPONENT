@@ -1,0 +1,70 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Outfit:wght@400;700&display=swap');
+
+.container {
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.03);
+}
+
+.container img {
+    border-radius: 10px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.container h1 {
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+    color: var(--dark-blue);
+    font-size: 16px;
+}
+
+.container p {
+    text-align: center;
+    font-weight: 400;
+    color: var(--grayish-blue);
+    font-size: 13px;
+    margin: 10px;
+}
+
+.attribution {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width :375px) {
+    .container {
+        width: 260px;
+    }
+
+}
